@@ -8706,15 +8706,12 @@ end
 
 if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then  
 
-Text = "ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ sᴏᴜʀᴄʀ ARFI \n\n[゠⁞  ARFI ᴄʜᴀɴɴᴇʟ](http://t.me/DRRE3)\n\n[゠⁞  ɪɴғᴏ sᴏᴜʀᴄᴇ](http://t.me/tools_ARFI)\n\n[゠⁞  ARFI ᴅᴇᴠᴇʟᴏᴘᴇʀ](http://t.me/mh4_na)\n\n[゠⁞  ʙᴏᴛ ARFI](http://t.me/TOWS11bot)"
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = '゠⁞ sᴏᴜʀᴄʀ ARFI',url="t.me/DRRE3/3"}},
-}
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DRRE3&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+Text = [• ARFI 𝖲𝗈𝗎𝗋𝖼𝖾  .](http://t.me/TEAM_ARFI) 
+     
+ [• ARFI Developer .](http://t.me/mmssds)
+ 
+send(msg.chat_id_, msg.id)
 end
-
 
 
 
